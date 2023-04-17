@@ -1,0 +1,313 @@
+@media (max-device-width: 767px){
+  body{
+    width: 1200px !important;
+  }
+  .grid {  display: grid;
+    
+    grid-template-columns: 1fr  !important; 
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0!important; 
+    gap: 0px 0px; 
+    grid-auto-columns: 0fr !important;
+    grid-auto-rows: 0fr !important;
+    grid-template-areas: 
+    "shapka1"
+    "shapka2" 
+    "photo1" 
+    "sezon1" 
+    "ssilka"
+    "photo2" 
+    "sezon2"
+    "ssilka2"!important; 
+  }
+  .photo2{
+    place-self: center;
+    margin-bottom: 100px;
+  }
+  .ssilka{
+    grid-area: ssilka;
+    margin-left: 800px;
+  }
+  .shapka1{
+    place-self: center;
+  }
+  .shapka2{
+    place-self: center;
+  }
+  .grid2{
+    display: grid;
+    
+    grid-template-columns: 1fr !important; 
+    grid-template-rows: 1fr  !important; 
+    gap: 0px 0px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+    "baldez"!important;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr  !important; 
+    grid-template-rows: 1fr !important; 
+    gap: 0px 0px; 
+    grid-auto-columns: 0fr !important;
+    grid-auto-rows: 0fr !important;
+    grid-auto-flow: row;
+    grid-template-areas:  
+      "photka-3" 
+      "opis" !important; 
+  }
+  .photka-3 { grid-area: photka-3; 
+    color: rgb(202, 202, 202);
+    font-size: 12px;
+
+  margin-top: 300px;}
+  .opis { grid-area: opis; place-self: center;
+    margin-bottom: 100px;
+}
+}
+
+
+html
+{
+  scroll-behavior: smooth;
+
+}
+body{
+    background-color: black;
+}
+.grid {  display: grid;
+    grid-template-columns: 0.4fr 0.9fr 0.9fr;
+    grid-template-rows: 0.5fr 0.5fr 0.8fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "shapka1 shapka2 shapka3"
+      "sezon1 photo1 ssilka"
+      "sezon2 photo2 ssilka2";
+  }
+  .grid2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "baldez"
+  }
+  .baldez{
+    grid-area: baldez;
+  }
+  
+  .shapka1 { grid-area: shapka1; 
+    color: rgb(202, 202, 202);
+    margin-top: 300px;
+    font-size: 60px;
+    margin-left: 100px;
+}
+  
+  .shapka2 { grid-area: shapka2;
+    opacity: 0.6;
+    margin-right: 100px; 
+
+
+}
+  
+  .shapka3 { grid-area: shapka3; 
+    color: rgb(202, 202, 202);
+    margin-top: 300px;
+    font-size: 60px;
+}
+  
+  .sezon1 { grid-area: sezon1;
+    margin-left: 50px;
+     }
+  
+  .photo1 { grid-area: photo1;
+    color: rgb(202, 202, 202);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+     }
+  
+  .ssilka { grid-area: ssilka;
+    opacity: 0.8;
+     }
+  
+  .sezon2 { grid-area: sezon2; 
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+  
+  .photo2 { grid-area: photo2; 
+    color: rgb(202, 202, 202);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 100px;
+    }
+    .photo22{
+        margin-top: 100px;
+        margin-left: 300px;
+        color: rgb(202, 202, 202);
+    font-size: 35px;
+    text-align: center;
+
+    }
+  p{
+    font-family: Copperplate Gothic Light;
+    color: rgb(173, 173, 173);
+  }
+  .container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.9fr 0.9fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "photka-3 opis"; 
+  }
+  .photka-3 { grid-area: photka-3; 
+    margin-top: 100px;
+    color: rgb(202, 202, 202);
+    font-size: 34px;
+    text-align: center;
+margin-left: 200px;}
+  .opis { grid-area: opis; 
+    margin-left: 200px;
+}
+
+.ZAG{
+  font-family: 'Colonna MT', sans-serif; 
+
+  margin-top: 100px;
+  color: grey;
+}
+  /* Текст по центру */
+  .gain-center{
+    transition: 2s; /* Время эффекта */
+    text-align: center; 
+  }
+  .gain-center:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+  a {
+    padding: 2px 1px 0;
+  }
+a:link {
+    color: #9c2828;
+  }
+  
+  a:visited {
+    color: #962121;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #000000;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    color: #ff6b6b;
+    
+  }
+  .hover-image-scale {
+    display: inline-block; 
+    overflow: hidden; /* Скрываем всё за контуром */
+  }
+  .hover-image-scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; 
+  }
+  .hover-image-scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+body {
+  background: #000000;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Pacifico";
+}
+
+.info {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  color: beige;
+}
+
+.w {
+  margin-left: 300px;
+  white-space: nowrap;
+  max-width: 1200px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: rgba(66, 66, 66, 0.5) repeat fixed;
+  background-image: url("изнанка.JPEG") ;
+
+  background-position: 100% 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+  font-size: 0;
+}
+
+.i {
+  width: 40px;
+  height: 1000px;
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  padding: 2px;
+  transition: all 1.3s ease-in-out;
+  background: rgba(66, 66, 66, 0.5)  repeat fixed;
+  background-image: url("real.JPEG");
+  background-size: cover;
+  background-position: 100% 50%;
+  border-radius: 0%;
+}
+.i:hover {
+  transition: all 0s linear;
+  opacity: 0;
+}
+
+.h {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  top: 35px;
+  font-size: 40px;
+  color: beige;
+  text-shadow: 0 5px 17px rgba(87, 87, 80, 0.85);
+}
+.poluchilos
+{
+    margin-left: 300px;   
+    font-size: 50px;
+    color: rgb(121, 117, 113);
+}
+
